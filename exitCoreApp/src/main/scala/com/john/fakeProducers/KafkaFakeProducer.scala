@@ -75,7 +75,7 @@ object KafkaFakeProducer {
       val msgLog =
         s"""|offset    = ${meta.offset()}|partition = ${meta.partition()}|topic     = ${meta.topic()}""".stripMargin
       println(msgLog)
-      Thread.sleep(100)
+      Thread.sleep(2000)
     }
 
     producer.close()
